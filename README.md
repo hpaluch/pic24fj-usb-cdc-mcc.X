@@ -10,6 +10,8 @@ Requirements:
 - PGM Switch should be in position `A` - PGC1, PGD1
 - additionally you need `USB breakout cable`
 
+![Microstick II as USB Device](https://raw.githubusercontent.com/hpaluch/pic24fj-usb-cdc-mcc.X/master/assets/microstick2-usb-cdc.jpg)
+
 Need to connect:
 ```
 USB Cable
@@ -27,14 +29,20 @@ Vdd from TP1 to PIN23 Vusb (supply for on-chip USB)
 Please see https://ww1.microchip.com/downloads/en/DeviceDoc/39721b.pdf
 figure `Figure 27-5: Self-Power Only`
 
-in Device Manager:
+Software used:
+- MPLAB X IDE v5.45
+- MCC plugin 4.0.2
+- XC16 v1.70
+- DFP: `PIC24F-GA-GB_DFP 1.4.141`
+
+Installing Device Driver - in Device Manager:
 * Other Devices -> `Product Name`
 * Update driver...
 * Use driver from sub-directory:
   ```
-  mcc_generated_files\usb\utilities\"Readme Signed Driver Package.txt" 
+  mcc_generated_files\usb\utilities\Readme Signed Driver Package.txt
   ```
-* I by acciendt use this - from MLA library:
+* I by accident use this - from MLA library:
   ```
   mla\v2018_11_26\apps\usb\device\cdc_basic\utilities\inf
   ```
