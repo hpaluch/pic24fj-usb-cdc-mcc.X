@@ -21,10 +21,17 @@ Color Signal    Microstick II
 BLACK GND    -> PIN 8         also PIN 1 on J6
 GREEN D+     -> PIN 21        also PIN 4 on J6
 WHITE D-     -> PIN 22        also PIN 5 on J6
-RED   +5V    -> 100OHm resistor  to PIN 15 - Vbus (sensing)
+RED   +5V    -> PIN 15 - Vbus (sensing)
 ```
-And:
+Additionaly:
+```
 Vdd from TP1 to PIN23 Vusb (supply for on-chip USB)
+```
+
+> NOTE: Originally I used 100Ohm resistor to connect
+> USB +5V to PIN15 (which is permitted in manual below).
+> But it become unreliable - PC reported broken device.
+
 
 Please see https://ww1.microchip.com/downloads/en/DeviceDoc/39721b.pdf
 figure `Figure 27-5: Self-Power Only`
