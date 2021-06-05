@@ -47,6 +47,7 @@
 */
 #include "mcc_generated_files/system.h"
 #include "mcc_generated_files/pin_manager.h"
+#include "mcc_generated_files/usb/usb.h"
 
 // in mcc_generated_files\usb\example_mcc_usb_cdc.c
 void MCC_USB_CDC_DemoTasks(void);
@@ -61,6 +62,7 @@ int main(void)
     
     while (1)
     {
+        USBDeviceAttach();
         MCC_USB_CDC_DemoTasks();
     }
 

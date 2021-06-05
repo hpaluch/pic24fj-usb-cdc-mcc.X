@@ -3,7 +3,9 @@
 Trivial USB CDC (Virtual COM port) demo, for Microstick II board,
 generated with MCC.
 
-WORK IN PROGRESS!
+WORK IN PROGRESS! I have troubles with my USB cable (Device Manager
+reporting faulty device - when I move cable a bit it suddenly starts
+working)...
 
 Requirements:
 - insert PIC24FJ64GB002 into Microstick II socket
@@ -28,9 +30,9 @@ Additionaly:
 Vdd from TP1 to PIN23 Vusb (supply for on-chip USB)
 ```
 
-> NOTE: Originally I used 100Ohm resistor to connect
-> USB +5V to PIN15 (which is permitted in manual below).
-> But it become unreliable - PC reported broken device.
+For safety you may also connect resistor <= 100 Ohm between
+USB +5V and PIC PIN15 - VBus. Originally I thought that it was
+cause of unreliable operation but it was later dismissed.
 
 
 Please see https://ww1.microchip.com/downloads/en/DeviceDoc/39721b.pdf
