@@ -48,6 +48,8 @@
 #include "mcc_generated_files/system.h"
 #include "mcc_generated_files/pin_manager.h"
 
+// in mcc_generated_files\usb\example_mcc_usb_cdc.c
+void MCC_USB_CDC_DemoTasks(void);
 /*
                          Main application
  */
